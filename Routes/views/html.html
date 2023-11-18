@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form
+      id="massage"
+      action="/login"
+      method="post"
+      onsubmit="document.getElementById('username').value=localStorage.getItem('username')"
+    >
+      <input hidden type="text" name="massage" id="massage" />
+      <button type="submit">Send</button>
+    </form>
+  </body>
+</html>
